@@ -1,0 +1,22 @@
+<div class="grid_12 alpha omega clearfix">
+	<% if home_page?  %>
+		<h1 id='logo' class="grid_3 alpha">
+	  	<%= link_to(root_path) do -%>
+				<%= image_tag('confetti-logo.gif', :alt => "Inspirational wedding ideas, dresses, honeymoons and more from Confetti, the wedding experts") %>
+			<%- end %>
+		</h1>
+	<% else -%>
+		<div id='logo' class="grid_3 alpha">
+	  	<%= link_to(root_path) do -%>
+				<%= image_tag('confetti-logo.gif', :alt => "Inspirational wedding ideas, dresses, honeymoons and more from Confetti, the wedding experts") %>
+			<%- end %>
+		</div>
+	<% end %>
+	<div class="grid_9 omega">
+		
+	</div>
+</div>
+<%= render(:partial => "/shared/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>

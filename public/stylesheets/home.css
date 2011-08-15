@@ -2,3 +2,221 @@
   Override default refinery homepage styles here.
   These only apply to the homepage of your site.
 */
+ {
+  
+}
+#home-features-parent {
+  position: relative;
+  height: 310px;
+  width: 620px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+#home-features {
+  margin-bottom: 20px;
+  _margin-bottom: 4px;
+}
+#home-features .item {
+  position: relative;
+}
+#home-features-parent #controls {
+  background: #fff;
+  background: rgba(255, 255, 255, 0.8);
+  bottom: 10px;
+  font-size: 20px;
+  padding: 0px 2px;
+  position: absolute;
+  right: 15px;
+  z-index: 100;
+}
+#home-features-parent #controls a, #home-features-parent #controls a:visited {
+  padding: 0 10px;
+  background-color: #333;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 100;
+  margin: 0 2px;
+}
+#home-features-parent #controls a.activeSlide:link, #home-features-parent #controls a.activeSlide:visited {
+  background-color: #EC2C91;
+  color: #FFF !important;
+  border-color: #EC2C91;
+  cursor: default;
+}
+h2{
+  font-size: 13px;
+  font-weight: bold;
+  background-color: #EC2D91;
+  color: #fff;
+  padding: 7px 15px;
+  margin: 0 0 20px 0;
+}
+#leftcol .item, #rightcol .item {
+  margin-top: 15px;
+  padding-left: 110px;
+  position: relative;
+  border-bottom: 1px dotted #FCA7DB;
+  margin-bottom: 25px;
+  height: 140px;
+}
+#leftcol .item img, #rightcol .item img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 125px;
+  width: 100px;
+}
+#leftcol .item h3, #rightcol .item h3 {
+  font-size: 13px;
+  margin: 0 0 5px;
+}
+#leftcol .item p, #rightcol .item p {
+  font-size: 12px;
+  margin: 0;
+}
+#leftcol .item .readmore, #rightcol .item .readmore {
+  position: absolute;
+  bottom: 10px;
+  left: 110px;
+}
+#leftcol .item .readmore span, #rightcol .item .readmore span {
+  display: none;
+}
+#leftcol .item.last, #rightcol .item.last {
+  border-bottom: none;
+  margin-bottom: 0;
+}
+#rightcol .imgitem {
+  margin-bottom: 7px;
+  margin-top: 10px;
+}
+.tabs {
+  margin: 0;
+  padding: 0;
+}
+.tabs li {
+  float: left;
+  margin-right: 3px;
+  display: inline;
+  background: #ccc;
+  border-top: 1px solid #ccc;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  -moz-border-radius-topright: 3px;
+  -moz-border-radius-topleft: 3px;
+  -webkit-border-radius-topright: 3px;
+  -webkit-border-radius-topleft: 3px;
+  border-top-right-radius: 3px;
+  border-top-left-radius: 3px;
+  list-style-type: none;
+  position: relative;
+  top: 1px;
+}
+.tabs li.active {
+  background: #fff;
+  border-bottom: none;
+  z-index: 1;
+}
+.tabs li.active a:link, .tabs li.active a:visited {
+  color: #ed2f93;
+}
+.tabs   li a:link, .tabs li a:visited {
+  color: #333;
+  padding: 6px 8px;
+  display: block;
+}
+.tabbed-content {
+  background: #FFFFFF url(http://image.confetti.co.uk/i/confettiV2Assets/webAssets/grad.gif) repeat-x scroll left bottom;
+  border: 1px solid #CCCCCC;
+  margin: -1px 0 20px;
+  margin: 0 0 20px/9;
+  _margin: -1px 0 20px;
+  padding: 10px 10px 1px;
+  height: 266px;
+  height: 265px	9;
+  _height: 261px;
+  width: 278px;
+  overflow: hidden;
+  float: left;
+  position: relative;
+}
+.tabbed-content div {
+  padding: 0;
+}
+.tabbed-content .item {
+  padding-left  : 110px;
+  position: relative;
+  height: 88px;
+}
+.tabbed-content .item img {
+  height: 70px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100px;
+}
+.tabbed-content .item h3 {
+  margin: 0;
+  font-size: 14px;
+}
+.tabbed-content .item p {
+  font-size: 12px;
+  margin: 0;
+  line-height: 1.2;
+}
+.tabbed-content .item .go {
+  background-color: #EC2D91;
+  bottom: 18px;
+  color: #FFFFFF;
+  display: block;
+  padding: 1px 5px;
+  position: absolute;
+  font-size: 11px;
+}
+#mpu {
+  margin-bottom: 20px;
+}
+#catalogue div {
+  height: 100px;
+  margin-bottom: 20px;
+  padding-left: 130px;
+  padding-top: 10px;
+  position: relative;
+}
+#catalogue div img {
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+#catalogue div p {
+  font-size: 20px;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-top: 10px;
+}
+#catalogue div .go {
+  background-color: #EC2D91;
+  bottom: 20px;
+  color: #FFFFFF;
+  display: block;
+  font-size: 11px;
+  padding: 1px 5px;
+  position: absolute;
+  right: 13px;
+}
+#quicklinks div {
+  margin-left: 5px;
+}
+#quicklinks div h3 {
+  color: #EC2D91;
+  margin: 15px 0 0 0;
+}
+#quicklinks div p {
+  color: #888888;
+  font-size: 11px;
+  margin: 0;
+}
+#quicklinks div p a:link, #quicklinks div p a:visited {
+  color: #000;
+  font-weight: bold;
+}

@@ -1,0 +1,22 @@
+<div id="content">
+	<div class="grid_8 alpha">
+		<section id="rotations">
+			<%=raw @page[:rotations] %>
+		</section>
+		<section id="leftcol" class="grid_4 alpha">
+			<%=raw @page[:leftcol] %>
+		</section>
+		<section id="rightcol" class="grid_4 omega">
+			<%=raw @page[:rightcol] %>
+		</section>
+	</div>
+	<div class="grid_4 omega">
+		<section id="tabs">
+			<%=raw @page[:tabs] %>
+		</section>
+		<%= render :partial => 'shared/mpu' %>
+		<div id="under_mpu">
+			<%=raw @page[:under_mpu] %>
+		</div>
+	</div>
+</div>
