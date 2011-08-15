@@ -521,6 +521,7 @@ h1#logo {
   position: relative;
   float: left;
   border-right: 1px solid #fff;
+  margin: 0;
 }
 #menu ul li a:link, #menu ul li a:visited {
   display: block;
