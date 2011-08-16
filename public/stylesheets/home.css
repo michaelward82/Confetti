@@ -50,6 +50,7 @@ h2{
   color: #fff;
   padding: 7px 15px;
   margin: 0 0 20px 0;
+  font: normal normal normal 13px/1.5 "Trebuchet MS", helvetica, clean, sans-serif;
 }
 #leftcol .item, #rightcol .item {
   margin-top: 15px;

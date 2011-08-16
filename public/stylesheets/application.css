@@ -507,6 +507,14 @@ h1 {
 h1#logo {
   margin: 0;
 }
+h2 {
+  font-size: 22px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: normal;
+  margin: 0;
+  color: #444;
+}
 
 #menu {
   background-color: #ccc;
@@ -563,6 +571,9 @@ h1#logo {
   
   border: 2px solid #ec2d91;
   background-color: #fff;
+}
+#menu>ul>li.last:hover ul, #menu>ul>li.last ul:hover {
+  right: 0;
 }
 #menu ul ul li a:link, #menu ul ul li a:visited {
   display: block;
