@@ -10,8 +10,11 @@
       <header class="grid_12">
         <%= render :partial => "/shared/header" -%>
       </header>
+
       <section id='page' class="grid_12">
-        <%= yield %>
+				<div id="content">
+        	<%= yield %>
+				</div>
       </section>
       <footer class="grid_12">
         <%= render :partial => "/shared/footer" -%>
