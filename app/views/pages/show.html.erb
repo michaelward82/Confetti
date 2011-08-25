@@ -2,6 +2,7 @@
 	<%= render :partial => 'shared/breadcrumb' %>
 	<h1><%= page_title %></h1>
 	<%=raw @page[:content] %>
+	<%= render :partial => "/shared/blog_posts_list", :locals => { :blog_posts => BlogPost.tagged_with(@page[:title]).live } %>
 </section>
 <section id="rightcol" class="grid_4 omega">
 	<%= render :partial => 'shared/sidebar_ads' %>
