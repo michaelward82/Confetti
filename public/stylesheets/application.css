@@ -587,6 +587,18 @@ h2 {
   float: none;
 }
 
+#breadcrumb {
+  float: left;
+  font-size: 11px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#breadcrumb li {
+  float: left;
+  padding-right: 5px;
+}
+
 #content {
   margin-top: 20px;
   float: left;

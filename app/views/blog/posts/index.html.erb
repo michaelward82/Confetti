@@ -1,27 +1,25 @@
-<div id="content">
-	
-	<section id="contentcopy" class="grid_8 alpha">
-		<h1><%= page_title %></h1>
-		<%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
+<section id="contentcopy" class="grid_8 alpha">
+	<%= render :partial => 'shared/breadcrumb' %>
+	<h1><%= page_title %></h1>
+	<%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
 
-	  <% if @blog_posts.any? %>
-	    <section id="blog_posts">
-	      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
-	      <%= will_paginate @blog_posts %>
-	    </section>
-	  <% else %>
-	    <p><%= t('.no_blog_articles_yet') %></p>
-	  <% end %>
-	</section>
-	<section id="rightcol" class="grid_4 omega">
-		
-		<%=raw @page[Page.default_parts.second.to_sym] if Page.default_parts.many? %>
-		<%= render :partial => "/shared/mpu" %>
-	  <%= render :partial => "/blog/shared/categories" %>
-	  <%= render :partial => "/blog/shared/tags" %>
-	  <%= render :partial => "/blog/shared/rss_feed" %>
-	  <%= blog_archive_list %>
-	</section>
+  <% if @blog_posts.any? %>
+    <section id="blog_posts">
+      <%= render :partial => "/blog/shared/post", :collection => @blog_posts %>
+      <%= will_paginate @blog_posts %>
+    </section>
+  <% else %>
+    <p><%= t('.no_blog_articles_yet') %></p>
+  <% end %>
+</section>
+<section id="rightcol" class="grid_4 omega">
+	<%= render :partial => "/shared/mpu" %>
+	<%=raw @page[Page.default_parts.second.to_sym] if Page.default_parts.many? %>
+  <%= render :partial => "/blog/shared/categories" %>
+  <%= render :partial => "/blog/shared/tags" %>
+  <%= render :partial => "/blog/shared/rss_feed" %>
+  <%= blog_archive_list %>
+</section>
 
 
 <% content_for :stylesheets, stylesheet_link_tag('refinerycms-blog') %>
