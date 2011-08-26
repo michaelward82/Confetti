@@ -1,0 +1,4 @@
+<section id="rightcol" class="<%= local_assigns[:css] %>">
+	<%= render :partial => 'shared/sidebar_ads' %>
+	<%=raw @page.content_for(:right_column) %>
+</section>

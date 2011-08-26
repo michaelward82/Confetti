@@ -1,0 +1,6 @@
+<% css = local_assigns[:css] %>
+<section id="contentcopy" class="<%= css %>">
+	<%= render :partial => 'shared/breadcrumb', :locals => { :css => css } %>
+	<h1><%=raw @page.title %></h1>
+	<%=raw @page.content_for(:content) %>
+</section>

@@ -1,4 +1,5 @@
-<ul id="breadcrumb" class="grid_8 alpha">
+<% css = local_assigns[:css] %>
+<ul id="breadcrumb" class="<%= css %>">
  <li><%= link_to "Home", root_url(:only_path => true) %> &gt; </li>
  <% [@page.ancestors, @page].flatten.collect do |p| %>
          <li><%= link_to p.title, p.url %> <%= "&gt;".html_safe unless p.id == @page.id  %></li>

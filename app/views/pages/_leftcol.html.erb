@@ -1,0 +1,12 @@
+<section id="leftcol" class="<%= local_assigns[:css] %>">
+	
+	<h2>In this section...</h2>
+	<%= render :partial => 'shared/menu', :locals => { 
+																					:roots => @page.self_and_siblings.reject(&:not_in_menu?), 
+																					:menu_levels => 0,
+																					:css => 'menu',
+																					:dom_id => 'left_nav' 
+																				} %>
+  <%= render :partial => 'shared/blog_posts_list', :locals => { :blog_posts => BlogPost.tagged_with(@page[:title]).live.limit(5) } %>
+  <%=raw @page.content_for(:left_column) %>
+</section>

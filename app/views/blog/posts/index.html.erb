@@ -1,5 +1,5 @@
 <section id="contentcopy" class="grid_8 alpha">
-	<%= render :partial => 'shared/breadcrumb' %>
+	<%= render :partial => 'shared/breadcrumb', :locals => { :css => "grid_8 alpha omega"} %>
 	<h1><%= page_title %></h1>
 	<%=raw @page[Page.default_parts.first.to_sym] if Page.default_parts.any? %>
 

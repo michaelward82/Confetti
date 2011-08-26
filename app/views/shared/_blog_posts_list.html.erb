@@ -1,8 +1,8 @@
 <% blog_posts = local_assigns[:blog_posts] %>
 <% if blog_posts.length > 0 %>
-	<section id="blog_posts">
-		<h2>'<%= page_title %>' Blog Posts</h2>
-		<ul>
+	<section id="related_blog_posts">
+		<h2>Related Blogs</h2>
+		<ul class="menu">
 		<% blog_posts.each do |post| %>
 			<li><%= link_to post.title, blog_post_url(post) %></li>
 		<% end %>

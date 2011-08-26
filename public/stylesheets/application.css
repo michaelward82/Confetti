@@ -530,10 +530,11 @@ h2 {
   float: left;
   border-right: 1px solid #fff;
   margin: 0;
+  font-weight: bold;
 }
 #menu ul li a:link, #menu ul li a:visited {
   display: block;
-  padding: 3px 10px;
+  padding: 3px 7px;
   text-decoration: none;
   color: #333;
   float: left;
@@ -580,6 +581,7 @@ h2 {
   width: auto;
   float: none;
   padding: 5px 10px;
+  font-weight: normal;
 }
 #menu ul ul li a:hover {
   display: block;
@@ -604,6 +606,41 @@ h2 {
   float: left;
 }
 
+ul.menu, .menu ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+#leftcol h2 {
+  background-color: #eee;
+  font-size: 14px;
+  padding: 4px;
+}
+.menu li.selected {
+  background-color: #fdeff5;
+  border-bottom: 1px solid #ec2d91;
+  border-top: 1px solid #ec2d91;
+  margin-bottom: -1px;
+  z-index: 1;
+  position: relative;
+}
+.menu li.first a:link, .menu li.first a:visited {
+  border-top: none;
+}
+.menu li.selected a:link, .menu li.selected a:visited {
+  border-top: 0;
+  display: block;
+}
+.menu a:link, .menu a:visited {
+  border-top: 1px solid #ddd;
+  color: #333;
+  display: block;
+  font-size: 11px;
+  padding: 5px;
+  text-decoration: none;
+  _height: 1px;
+}
+
 #recommended {
   background-color: #fff;
   border: 1px solid #ccc;
@@ -623,6 +660,35 @@ h2 {
   height: 600px;
   width: 120px;
 }
+
+
+
+#showcase-intro {
+  line-height: 19px;
+}
+#showcase-intro img {
+  float: left;
+  margin: 0 10px 0 0;
+}
+#showcase-searches {
+  background-color: #eee;
+}
+#showcase-searches h2, #showcase h2 {
+  font-size: 15px;
+  color: #ec2d91;
+}
+#showcase-searches select, #showcase-searches input[type=text] {
+  width: 100%;
+  margin: 3px 0;
+}
+#showcase-dress-go, #showcase-retailer-go {
+  float: right;
+  background-color: #ec2d91;
+  color: #fff;
+  border: none;
+  padding: 4px 15px;
+}
+
 
 footer {
   position: relative;
