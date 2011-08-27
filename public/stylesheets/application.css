@@ -688,7 +688,128 @@ ul.menu, .menu ul {
   border: none;
   padding: 4px 15px;
 }
+.js #showcase {
+  max-height: 218px;
+  overflow: hidden;
+}
+#showcase {
+  background-color: #eee;
+  margin: 20px 0 0;
+  padding: 10px;
+}
+#showcase-searches h2, #showcase h2 {
+  font-size: 15px;
+  color: #ec2d91;
+}
+#content .jcarousel-skin-confetti {
+  margin: 10px auto;
+  overflow: hidden;
+  padding: 0;
+}
+.jcarousel-skin-confetti .jcarousel-container-horizontal {
+  width: 459px;
+  padding: 0;
+}
+.jcarousel-skin-confetti .jcarousel-clip-horizontal {
+  width: 459px;
+  height: 150px;
+}
+.js #showcase li {
+  position: relative;
+  float: left;
+  list-style: none outside none;
+  height: 150px;
+  margin-right: 5px;
+}
+#showcase li {
+  width: 111px;
+}
+.jcarousel-skin-confetti .jcarousel-item-horizontal {
+  margin-left: 0;
+  margin-right: 5px;
+}
+.jcarousel-skin-confetti .jcarousel-item {
+  width: 111px;
+  height: 150px;
+}
+#showcase li span {
+  background: #fff;
+  background: 0;
+  -ms-filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#CCFFFFFF,endColorstr=#CCFFFFFF);
+  zoom: 1;
+  background: rgba(255,255,255,0.8);
+  bottom: 0;
+  left: 0;
+  display: block;
+  padding: 5px;
+  position: absolute;
+  text-align: center;
+  width: 101px;
+  z-index: 50;
+  font-size: 11px;
+}
+#showcase li span em {
+  color: #000;
+  font-style: normal;
+}
+.js #showcase-prev {
+  margin: -5px 0;
+  padding: 10px;
+  width: 208px;
+}
 
+.js #showcase-prev:active, .js #showcase-next:active, .js #showcase-prev:focus, .js #showcase-next:focus {
+  outline: 0;
+}
+.js #showcase-prev:hover, .js #showcase-next:hover {
+  background-color: #fff;
+  border: 1px solid #ec2d91;
+  color: #000;
+  padding: 9px;
+}
+.js #showcase-next {
+  margin: -5px 0 -5px 4px;
+  padding: 10px;
+  width: 208px;
+}
+.js #showcase-prev, .js #showcase-next {
+  display: block;
+  float: left;
+  width: 198px;
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 15px;
+}
+#content-spots {
+  margin-top: 10px;
+}
+#content-spots a:link, #content-spots a:visited {
+  color: #333;
+}
+#content-spots .item {
+  border: 2px solid #eee;
+  float: left;
+  margin: 10px 10px 0 0;
+  padding: 5px;
+  width: 211px;
+  height: 170px;
+  font-size: 12px;
+  overflow: hidden;
+}
+#content-spots img {
+  float: left;
+  margin: 4px 10px 5px 0;
+}
+#content-spots h2 {
+  font-size: 15px;
+  color: #ec2d91;
+  margin-bottom: 5px;
+}
+#content-spots .item.b {
+  margin-right: 0;
+}
 
 footer {
   position: relative;
