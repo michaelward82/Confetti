@@ -43,7 +43,7 @@
   border-color: #EC2C91;
   cursor: default;
 }
-h2{
+#leftcol h2, #rightcol h2 {
   font-size: 13px;
   font-weight: bold;
   background-color: #EC2D91;
