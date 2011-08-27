@@ -665,6 +665,7 @@ ul.menu, .menu ul {
 
 #showcase-intro {
   line-height: 19px;
+  font-size: 12px;
 }
 #showcase-intro img {
   float: left;
@@ -794,9 +795,12 @@ ul.menu, .menu ul {
   margin: 10px 10px 0 0;
   padding: 5px;
   width: 211px;
-  height: 170px;
+  height: 190px;
   font-size: 12px;
   overflow: hidden;
+}
+#content-spots .item.b {
+  margin-right: 0;
 }
 #content-spots img {
   float: left;
@@ -807,9 +811,11 @@ ul.menu, .menu ul {
   color: #ec2d91;
   margin-bottom: 5px;
 }
-#content-spots .item.b {
-  margin-right: 0;
+#content p {
+  margin: 0 0 1em 0;
 }
+
+
 
 footer {
   position: relative;
