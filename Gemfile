@@ -6,6 +6,7 @@ source 'http://rubygems.org'
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
 gem 'sqlite3'
+gem 'rack-pagespeed'
 
 # Use unicorn as the web server
 # gem 'unicorn'
@@ -34,6 +35,10 @@ gem 'sqlite3'
 # Anything you put in here will be overridden when the app gets updated.
 
 gem 'refinerycms',              '~> 1.0.4'
+
+group :development do
+  gem "mongrel", "1.2.0.pre2"
+end
 
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
