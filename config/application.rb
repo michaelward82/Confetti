@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-# require 'rack/pagespeed'
+require 'rack/pagespeed'
 require 'tmpdir'
 
 # If you have a Gemfile, require the gems listed there, including any gems
@@ -41,11 +41,11 @@ module Confetti
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
     
-    # config.middleware.use Rack::PageSpeed, :public => Rails.public_path do
-    #       store :disk => Dir.tmpdir # require 'tmpdir'
-    #       minify_javascripts
-    #       combine_javascripts
-    #       combine_css
-    #     end
+    config.middleware.use Rack::PageSpeed, :public => Rails.public_path do
+      store :disk => Dir.tmpdir # require 'tmpdir'
+      minify_javascripts
+      combine_javascripts
+      combine_css
+    end
   end
 end
