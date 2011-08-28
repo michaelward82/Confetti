@@ -1,10 +1,6 @@
 GEM
   remote: http://rubygems.org/
   specs:
-    POpen4 (0.1.4)
-      Platform (>= 0.4.0)
-      open4
-    Platform (0.4.0)
     abstract (1.0.0)
     actionmailer (3.0.9)
       actionpack (= 3.0.9)
@@ -70,8 +66,6 @@ GEM
       activemodel (>= 3.0.0)
       activerecord (>= 3.0.0)
     i18n (0.5.0)
-    jammit (0.6.3)
-      yui-compressor (>= 0.9.3)
     mail (2.2.19)
       activesupport (>= 2.3.6)
       i18n (>= 0.4.0)
@@ -87,7 +81,6 @@ GEM
     net-ssh (2.1.4)
     newrelic_rpm (3.1.1)
     nokogiri (1.5.0)
-    open4 (1.1.0)
     orm_adapter (0.0.5)
     polyglot (0.3.2)
     rack (1.2.3)
@@ -181,8 +174,6 @@ GEM
     warden (1.0.5)
       rack (>= 1.0)
     will_paginate (3.0.pre2)
-    yui-compressor (0.9.6)
-      POpen4 (>= 0.1.4)
 
 PLATFORMS
   ruby
@@ -190,11 +181,9 @@ PLATFORMS
 DEPENDENCIES
   dalli
   fog
-  jammit
   mongrel (= 1.2.0.pre2)
   newrelic_rpm
   refinerycms (~> 1.0.4)
   refinerycms-blog (~> 1.6)
   refinerycms-i18n (~> 1.0.0)
   sqlite3
-  yui-compressor

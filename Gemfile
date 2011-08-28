@@ -19,8 +19,6 @@ end
 # USER DEFINED
 gem 'fog'
 gem 'dalli'
-gem 'yui-compressor'
-gem 'jammit'
 
 group :production do
   gem 'newrelic_rpm'
