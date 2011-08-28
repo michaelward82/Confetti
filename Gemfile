@@ -36,10 +36,6 @@ gem 'rack-pagespeed'
 
 gem 'refinerycms',              '~> 1.0.4'
 
-group :development do
-  gem "mongrel", "1.2.0.pre2"
-end
-
 group :development, :test do
   # To use refinerycms-testing, uncomment it (if it's commented out) and run 'bundle install'
   # Then, run 'rails generate refinerycms_testing' which will copy its support files.
@@ -50,7 +46,13 @@ end
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
+gem 'fog'
+gem 'dalli'
+gem 'newrelic_rpm'
 
+group :development do
+  gem "mongrel", "1.2.0.pre2"
+end
 
 # Specify additional Refinery CMS Engines here (all optional):
 # gem 'refinerycms-inquiries',    '~> 1.0'
@@ -60,8 +62,5 @@ gem 'refinerycms-blog',         '~> 1.6'
 
 # Add i18n support (optional, you can remove this if you really want to).
 gem 'refinerycms-i18n',         '~> 1.0.0'
-gem 'fog'
-gem 'dalli'
-gem 'newrelic_rpm'
 
 # END USER DEFINED
