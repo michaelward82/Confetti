@@ -17,11 +17,13 @@ end
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
-gem 'rack-pagespeed', :git => "https://github.com/juliocesar/rack-pagespeed.git"
 gem 'fog'
 gem 'dalli'
 gem 'newrelic_rpm'
 
+group :production do
+  gem 'rack-pagespeed', :git => "https://github.com/juliocesar/rack-pagespeed.git"
+end
 group :development do
   gem "mongrel", "1.2.0.pre2"
 end
