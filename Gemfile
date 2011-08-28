@@ -21,7 +21,6 @@ gem 'rack-pagespeed'
 gem 'fog'
 gem 'dalli'
 gem 'newrelic_rpm'
-gem 'syck'
 
 group :development do
   gem "mongrel", "1.2.0.pre2"
