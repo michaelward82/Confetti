@@ -1,7 +1,7 @@
 require File.expand_path('../boot', __FILE__)
 
 require 'rails/all'
-require 'rack/pagespeed'
+# require 'rack/pagespeed'
 require 'tmpdir'
 
 # If you have a Gemfile, require the gems listed there, including any gems
