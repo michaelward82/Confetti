@@ -19,10 +19,10 @@ end
 # USER DEFINED
 gem 'fog'
 gem 'dalli'
-gem 'newrelic_rpm'
 
 group :production do
   gem 'rack-pagespeed', :git => "https://github.com/juliocesar/rack-pagespeed.git"
+  gem 'newrelic_rpm'
 end
 group :development do
   gem "mongrel", "1.2.0.pre2"
