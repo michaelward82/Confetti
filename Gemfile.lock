@@ -74,6 +74,7 @@ GEM
     net-scp (1.0.4)
       net-ssh (>= 1.99.1)
     net-ssh (2.1.4)
+    newrelic_rpm (3.1.1)
     nokogiri (1.5.0)
     orm_adapter (0.0.5)
     polyglot (0.3.2)
@@ -175,6 +176,7 @@ PLATFORMS
 DEPENDENCIES
   dalli
   fog
+  newrelic_rpm
   refinerycms (~> 1.0.4)
   refinerycms-blog (~> 1.6)
   refinerycms-i18n (~> 1.0.0)
