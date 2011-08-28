@@ -17,7 +17,7 @@ end
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
-
+gem 'rack-pagespeed'
 gem 'fog'
 gem 'dalli'
 gem 'newrelic_rpm'
