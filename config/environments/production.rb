@@ -49,7 +49,7 @@ Confetti::Application.configure do
   config.cache_store = :dalli_store
   
   config.middleware.use Rack::PageSpeed, :public => Rails.public_path do
-    store :disk => Dir.tmpdir # require 'tmpdir'
+    store :memcached
     minify_javascripts
     combine_javascripts
     combine_css
