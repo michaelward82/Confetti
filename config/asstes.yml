@@ -1,0 +1,14 @@
+embed_assets: on
+package_assets: on
+
+javascripts:
+  common: 
+    - public/javascripts/plugins.js
+    - public/javascripts/application.js
+
+stylesheets:
+  common:
+    - public/stylesheets/960gs.css
+    - public/stylesheets/application.css
+    - public/stylesheets/formatting.css
+    - public/stylesheets/theme.css

@@ -47,13 +47,6 @@ Confetti::Application.configure do
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
   config.cache_store = :dalli_store
-  
-  config.middleware.use Rack::PageSpeed, :public => Rails.public_path do
-    store :memcached
-    minify_javascripts
-    combine_javascripts
-    combine_css
-  end
 end
 Refinery.rescue_not_found = true
 # When true will use Amazon's Simple Storage Service on your production machine
