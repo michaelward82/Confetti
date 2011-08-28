@@ -41,11 +41,11 @@ module Confetti
     # Configure sensitive parameters which will be filtered from the log file.
     config.filter_parameters += [:password]
     
-    config.middleware.use Rack::PageSpeed, :public => Rails.public_path do
-      store :disk => Dir.tmpdir # require 'tmpdir'
-      minify_javascripts
-      combine_javascripts
-      combine_css
-    end
+    # config.middleware.use Rack::PageSpeed, :public => Rails.public_path do
+    #       store :disk => Dir.tmpdir # require 'tmpdir'
+    #       minify_javascripts
+    #       combine_javascripts
+    #       combine_css
+    #     end
   end
 end
