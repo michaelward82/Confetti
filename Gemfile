@@ -17,7 +17,7 @@ end
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
-gem 'rack-pagespeed'
+gem 'rack-pagespeed', :git => "https://github.com/juliocesar/rack-pagespeed.git"
 gem 'fog'
 gem 'dalli'
 gem 'newrelic_rpm'
