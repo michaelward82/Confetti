@@ -1,20 +1,22 @@
-<div class="grid_8 alpha">
-	<section id="rotations">
-		<%=raw @page.content_for(:rotations) %>
-	</section>
-	<section id="leftcol" class="grid_4 alpha">
-		<%=raw @page.content_for(:leftcol) %>
-	</section>
-	<section id="rightcol" class="grid_4 omega">
-		<%=raw @page.content_for(:rightcol) %>
-	</section>
-</div>
-<div class="grid_4 omega">
-	<section id="tabs">
-		<%=raw @page.content_for(:tabs) %>
-	</section>
-	<%= render :partial => 'shared/mpu' %>
-	<div id="under_mpu">
-		<%=raw @page.content_for(:under_mpu) %>
+<div class="home">
+	<div class="grid_8 alpha">
+		<section id="rotations">
+			<%=raw @page.content_for(:rotations) %>
+		</section>
+		<section id="leftcol" class="grid_4 alpha">
+			<%=raw @page.content_for(:leftcol) %>
+		</section>
+		<section id="rightcol" class="grid_4 omega">
+			<%=raw @page.content_for(:rightcol) %>
+		</section>
+	</div>
+	<div class="grid_4 omega">
+		<section id="tabs">
+			<%=raw @page.content_for(:tabs) %>
+		</section>
+		<%= render :partial => 'shared/mpu' %>
+		<div id="under_mpu">
+			<%=raw @page.content_for(:under_mpu) %>
+		</div>
 	</div>
 </div>

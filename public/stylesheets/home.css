@@ -5,21 +5,21 @@
  {
   
 }
-#home-features-parent {
+.home #home-features-parent {
   position: relative;
   height: 310px;
   width: 620px;
   overflow: hidden;
   margin-bottom: 20px;
 }
-#home-features {
+.home #home-features {
   margin-bottom: 20px;
   _margin-bottom: 4px;
 }
-#home-features .item {
+.home #home-features .item {
   position: relative;
 }
-#home-features-parent #controls {
+.home #home-features-parent #controls {
   background: #fff;
   background: rgba(255, 255, 255, 0.8);
   bottom: 10px;
@@ -29,7 +29,7 @@
   right: 15px;
   z-index: 100;
 }
-#home-features-parent #controls a, #home-features-parent #controls a:visited {
+.home #home-features-parent #controls a, .home #home-features-parent #controls a:visited {
   padding: 0 10px;
   background-color: #333;
   text-decoration: none;
@@ -37,13 +37,13 @@
   font-weight: 100;
   margin: 0 2px;
 }
-#home-features-parent #controls a.activeSlide:link, #home-features-parent #controls a.activeSlide:visited {
+.home #home-features-parent #controls a.activeSlide:link, .home #home-features-parent #controls a.activeSlide:visited {
   background-color: #EC2C91;
   color: #FFF !important;
   border-color: #EC2C91;
   cursor: default;
 }
-#leftcol h2, #rightcol h2 {
+.home #leftcol h2, .home h2 {
   font-size: 13px;
   font-weight: bold;
   background-color: #EC2D91;
@@ -52,7 +52,7 @@
   margin: 0 0 20px 0;
   font: normal normal normal 13px/1.5 "Trebuchet MS", helvetica, clean, sans-serif;
 }
-#leftcol .item, #rightcol .item {
+.home #leftcol .item, .home #rightcol .item {
   margin-top: 15px;
   padding-left: 110px;
   position: relative;
@@ -60,42 +60,42 @@
   margin-bottom: 25px;
   height: 140px;
 }
-#leftcol .item img, #rightcol .item img {
+.home #leftcol .item img, .home #rightcol .item img {
   position: absolute;
   top: 0;
   left: 0;
   height: 125px;
   width: 100px;
 }
-#leftcol .item h3, #rightcol .item h3 {
+.home #leftcol .item h3, .home #rightcol .item h3 {
   font-size: 13px;
   margin: 0 0 5px;
 }
-#leftcol .item p, #rightcol .item p {
+.home #leftcol .item p, .home #rightcol .item p {
   font-size: 12px;
   margin: 0;
 }
-#leftcol .item .readmore, #rightcol .item .readmore {
+.home #leftcol .item .readmore, .home #rightcol .item .readmore {
   position: absolute;
   bottom: 10px;
   left: 110px;
 }
-#leftcol .item .readmore span, #rightcol .item .readmore span {
+.home #leftcol .item .readmore span, .home #rightcol .item .readmore span {
   display: none;
 }
-#leftcol .item.last, #rightcol .item.last {
+.home #leftcol .item.last, .home #rightcol .item.last {
   border-bottom: none;
   margin-bottom: 0;
 }
-#rightcol .imgitem {
+.home #rightcol .imgitem {
   margin-bottom: 7px;
   margin-top: 10px;
 }
-.tabs {
+.home .tabs {
   margin: 0;
   padding: 0;
 }
-.tabs li {
+.home .tabs li {
   float: left;
   margin-right: 3px;
   display: inline;
@@ -113,20 +113,20 @@
   position: relative;
   top: 1px;
 }
-.tabs li.active {
+.home .tabs li.active {
   background: #fff;
   border-bottom: none;
   z-index: 1;
 }
-.tabs li.active a:link, .tabs li.active a:visited {
+.home .tabs li.active a:link, .home .tabs li.active a:visited {
   color: #ed2f93;
 }
-.tabs   li a:link, .tabs li a:visited {
+.home .tabs   li a:link, .home .tabs li a:visited {
   color: #333;
   padding: 6px 8px;
   display: block;
 }
-.tabbed-content {
+.home .tabbed-content {
   background: #FFFFFF url(http://image.confetti.co.uk/i/confettiV2Assets/webAssets/grad.gif) repeat-x scroll left bottom;
   border: 1px solid #CCCCCC;
   margin: -1px 0 20px;
@@ -141,31 +141,31 @@
   float: left;
   position: relative;
 }
-.tabbed-content div {
+.home .tabbed-content div {
   padding: 0;
 }
-.tabbed-content .item {
+.home .tabbed-content .item {
   padding-left  : 110px;
   position: relative;
   height: 88px;
 }
-.tabbed-content .item img {
+.home .tabbed-content .item img {
   height: 70px;
   left: 0;
   position: absolute;
   top: 0;
   width: 100px;
 }
-.tabbed-content .item h3 {
+.home .tabbed-content .item h3 {
   margin: 0;
   font-size: 14px;
 }
-.tabbed-content .item p {
+.home .tabbed-content .item p {
   font-size: 12px;
   margin: 0;
   line-height: 1.2;
 }
-.tabbed-content .item .go {
+.home .tabbed-content .item .go {
   background-color: #EC2D91;
   bottom: 18px;
   color: #FFFFFF;
@@ -174,28 +174,28 @@
   position: absolute;
   font-size: 11px;
 }
-#mpu {
+.home #mpu {
   margin-bottom: 20px;
 }
-#catalogue div {
+.home #catalogue div {
   height: 100px;
   margin-bottom: 20px;
   padding-left: 130px;
   padding-top: 10px;
   position: relative;
 }
-#catalogue div img {
+.home #catalogue div img {
   left: 0;
   position: absolute;
   top: 0;
 }
-#catalogue div p {
+.home #catalogue div p {
   font-size: 20px;
   font-weight: bold;
   line-height: 1.2;
   margin-top: 10px;
 }
-#catalogue div .go {
+.home #catalogue div .go {
   background-color: #EC2D91;
   bottom: 20px;
   color: #FFFFFF;
@@ -205,19 +205,19 @@
   position: absolute;
   right: 13px;
 }
-#quicklinks div {
+.home #quicklinks div {
   margin-left: 5px;
 }
-#quicklinks div h3 {
+.home #quicklinks div h3 {
   color: #EC2D91;
   margin: 15px 0 0 0;
 }
-#quicklinks div p {
+.home #quicklinks div p {
   color: #888888;
   font-size: 11px;
   margin: 0;
 }
-#quicklinks div p a:link, #quicklinks div p a:visited {
+.home #quicklinks div p a:link, .home #quicklinks div p a:visited {
   color: #000;
   font-weight: bold;
 }
