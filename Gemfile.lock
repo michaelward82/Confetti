@@ -1,18 +1,3 @@
-GIT
-  remote: https://github.com/juliocesar/rack-pagespeed.git
-  revision: a59d36d9be81a0288fa6d281e6532526b6dc3717
-  specs:
-    rack-pagespeed (1.1.1)
-      dalli
-      jsmin
-      jsmin
-      memcached
-      mime-types
-      nokogiri
-      nokogiri
-      rack
-      rack
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -105,6 +90,16 @@ GEM
       rack (>= 0.4)
     rack-mount (0.6.14)
       rack (>= 1.0.0)
+    rack-pagespeed (1.1.1)
+      dalli
+      jsmin
+      jsmin
+      memcached
+      mime-types
+      nokogiri
+      nokogiri
+      rack
+      rack
     rack-test (0.5.7)
       rack (>= 1.0)
     rails (3.0.9)
@@ -200,7 +195,7 @@ DEPENDENCIES
   fog
   mongrel (= 1.2.0.pre2)
   newrelic_rpm
-  rack-pagespeed!
+  rack-pagespeed
   refinerycms (~> 1.0.4)
   refinerycms-blog (~> 1.6)
   refinerycms-i18n (~> 1.0.0)
