@@ -21,7 +21,6 @@ gem 'fog'
 gem 'dalli'
 
 group :production do
-  gem 'rack-pagespeed', :git => "https://github.com/juliocesar/rack-pagespeed.git"
   gem 'newrelic_rpm'
 end
 group :development do
