@@ -1,26 +1,29 @@
-<% left_col_content = @page.content_for(:left_column) %>
-<% content_content = @page.content_for(:content) %>
-<% right_col_content = @page.content_for(:right_column) %>
-<% if (!left_col_content && !!content_content && !right_col_content) -%>
+<% # Evaluates to true if page part exists, false if not 
+	left_col_content = !!@page.content_for(:left_column)
+	content_content = !!@page.content_for(:content)
+	right_col_content = !!@page.content_for(:right_column) 
+%>
+
+<% if (!left_col_content && content_content && !right_col_content) -%>
 	<%= render :partial => 'content', 	:object => @page,
 																			:locals => {  :css => "grid_12 alpha omega" } %>
 <% end -%>
 
-<% if (!!left_col_content && !!content_content && !right_col_content) -%>
+<% if (left_col_content && content_content && !right_col_content) -%>
 	<%= render :partial => 'leftcol', 	:object => @page,
 																			:locals => { 	:css => "grid_2 alpha" } %>
 	<%= render :partial => 'content', 	:object => @page,
 																			:locals => { 	:css => "grid_10 omega" } %>
 <% end -%>
 
-<% if (!left_col_content && !!content_content && !!right_col_content) -%>
+<% if (!left_col_content && content_content && right_col_content) -%>
 	<%= render :partial => 'content', 	:object => @page,
 																			:locals => { 	:css => "grid_8 alpha" } %>
 	<%= render :partial => 'rightcol', 	:object => @page,
 																			:locals => { 	:css => "grid_4 omega" } %>
 <% end -%>
 
-<% if (!!left_col_content && !!content_content && !!right_col_content) -%>
+<% if (left_col_content && content_content && right_col_content) -%>
 	<%= render :partial => 'leftcol', 	:object => @page,
 																			:locals => { 	:css => "grid_2 alpha" } %>
 	<%= render :partial => 'content', 	:object => @page,
