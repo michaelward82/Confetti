@@ -7,7 +7,7 @@
 		<% if refinery_user? %><div id="site-bar-padding"></div><% end %>
     <%= render :partial => "/shared/ie6check" if request.env['HTTP_USER_AGENT'] =~ /MSIE/ -%>
     <div class="container_12">
-      <header class="grid_12">
+      <header>
         <%= render :partial => "/shared/header" -%>
       </header>
 

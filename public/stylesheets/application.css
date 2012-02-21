@@ -520,79 +520,6 @@ h2 {
   float: left;
 }
 
-#menu {
-  background-color: #ccc;
-  clear: left;
-}
-#menu ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-#menu>ul>li {
-  position: relative;
-  float: left;
-  border-right: 1px solid #fff;
-  margin: 0;
-  font-weight: bold;
-}
-#menu ul li a:link, #menu ul li a:visited {
-  display: block;
-  padding: 3px 7px;
-  text-decoration: none;
-  color: #333;
-  float: left;
-}
-#menu ul li:hover>a, #menu ul>li>a:hover, #menu>ul>li>a:active, #menu>ul>li>a:focus, 
-#menu>ul>li.selected>a:link,  #menu>ul>li.selected>a:visited {
-  background-color: #ec2d91;
-  color: #fff;
-}
-#menu ul li.last, #menu ul li.last {
-  border-right: none;
-}
-#menu li#item_1>a:link, #menu li#item_1>a:visited {
-  background-image: url("//image.confetti.co.uk/UI/buttons/menu-shop.gif");
-  background-repeat: no-repeat;
-  background-position: -1px -3px;
-  padding-left: 21px;
-}
-#menu li#item_1:hover>a, #menu li#item_1>a:hover, #menu li#item_1>a:active, #menu li#item_1>a:focus {
-  background-image: url("//image.confetti.co.uk/UI/buttons/menu-shop.gif");
-  background-repeat: no-repeat;
-  background-position: -1px -33px;
-  padding-left: 21px;
-}
-
-#menu ul ul {
-  display: none;
-}
-#menu>ul>li:hover ul, #menu>ul>li ul:hover {
-  display: block;
-  position: absolute;
-  z-index: 500;
-  top: 100%;
-  width: 230px;
-  
-  border: 2px solid #ec2d91;
-  background-color: #fff;
-}
-#menu>ul>li.last:hover ul, #menu>ul>li.last ul:hover {
-  right: 0;
-}
-#menu ul ul li a:link, #menu ul ul li a:visited {
-  display: block;
-  width: auto;
-  float: none;
-  padding: 5px 10px;
-  font-weight: normal;
-}
-#menu ul ul li a:hover {
-  display: block;
-  width: auto;
-  float: none;
-}
-
 #breadcrumb {
   float: left;
   font-size: 11px;
@@ -863,4 +790,331 @@ footer {
   font-size: 11px;
   padding-top: 10px;
   margin: 0 0 60px;
+}
+
+
+
+#header {
+  float: left;
+  margin: 0 0 10px;
+}
+#toplinks {
+  font-size: 11px;
+  line-height: 25px;
+  text-align: right;
+  position: relative;
+}
+#logo {
+  float: left;
+  height: 138px;
+  width: 222px;
+}
+#logo a img {
+  border: none;
+}
+#logo-contacts {
+  color: #888888;
+  font-size: 11px;
+  line-height: 1.3;
+  padding: 6px 0;
+  text-align: center;
+}
+#logo-contacts strong {
+  color: #EC2D91;
+  display: block;
+  font-size: 15px;
+  font-weight: bold;
+}
+#leaderboard {
+  float: left;
+  height: 90px;
+  width: 728px;
+  margin-bottom: 7px;
+}
+#shop-promo img {
+  margin-top: 14px;
+}
+#searches {
+  border-right: 1px solid #CCCCCC;
+  float: left;
+  width: 482px;
+  font-size: 11px;
+}
+#searches form {
+  margin: 0;
+}
+#directory-search, #shop-search {
+  float: left;
+  padding: 0 10px 0 0;
+  width: 231px;
+  height: 40px;
+  line-height: 37px;
+}
+.ie8 #directory-search, .ie8 #shop-search {
+  height: 41px;
+}
+#directory-search input.text, #shop-search input.text {
+  font-size: 11px;
+  padding: 4px 5px 3px 22px;
+  border: 1px solid #ccc;
+  width: 144px;
+
+  background: url(//image.confetti.co.uk/UI/icons/search2.gif) no-repeat 4px center;
+
+    /* Google Chrome */
+  -webkit-appearance: none;
+  -webkit-box-sizing: content-box;
+}
+::-webkit-input-placeholder {
+  color: #888;
+}
+:-moz-placeholder {
+  color: #888;
+}
+#directory-search .button, #shop-search .button {
+  float: none;
+  font-size: 11px;
+  width: auto;
+}
+#basket {
+  background: url("//image.confetti.co.uk/UI/icons/basket.gif") no-repeat scroll 5px center transparent;
+  float: left;
+  font-size: 11px;
+  height: 40px;
+  line-height: 40px;
+  padding: 0 0 0 10px;
+  position: relative;
+  width: 235px;
+}
+#basket a:link, #basket a:visited {
+  color: #666;
+  text-decoration: none;
+  position: absolute;
+  top:0;
+  bottom:0;
+  left: 0;
+  right:0;
+  _right: -10px;
+  cursor: pointer;
+}
+#basket a:link img, #basket a:visited img {
+  border: none;
+}
+#basket a:hover {
+  text-decoration: none;
+  background-color: transparent;
+}
+#basket a span {
+  display: block;
+  float: left;
+  margin-left: 35px;
+  _margin-left: 18px;
+  text-align: center;
+  width: 120px;
+}
+#basket a span:hover {
+  text-decoration: underline;
+  background-color: transparent;
+}
+#basket img {
+  float: right;
+  margin-left: 5px;
+  margin-top: 7px;
+}
+#basket .button {
+  float: right;
+  margin-top: 7px;
+  padding: 4px 10px 2px;
+}
+.ie8 #basket .button {
+  padding: 4px 10px 3px;
+}
+/* MENU */
+#mainmenu2 {
+  position: relative;
+  margin: 0 auto 20px;
+  padding: 0;
+  width: 948px;
+  border: 1px solid #ccc;
+  background: url("//image.confetti.co.uk/UI/menuimages/menu-grad.gif") repeat-x scroll left 0 transparent;
+  height: 30px;
+  list-style-type: none;
+  font-size: 12px;
+  z-index: 1001;
+  clear: left;
+}
+#mainmenu2 a:focus, #mainmenu2 a:active {
+  outline: none;
+}
+#mainmenu2 li {
+  list-style-type: none;
+}
+#mainmenu2 li.toplevel {
+  float: left;
+  line-height: 30px;
+}
+#mainmenu2 #shopicon {
+  padding-right: 4px;
+  vertical-align: baseline;
+}
+#mainmenu2 li.toplevel a.toplevellink {
+  padding: 0 10px;
+  display: block;
+  text-decoration: none;
+  color: #666;
+  font-weight: bold;
+  border-left: 1px solid #fff;
+  border-right: 1px solid #e1e1e1;
+}
+#mainmenu2 li.last a.toplevellink {
+  border-right: none;
+}
+#mainmenu2 li.shopmenu a.toplevellink {
+  border-right: 1px solid #ccc;
+}
+#mainmenu2 li.toplevel a.toplevellink:hover {
+  background: url("//image.confetti.co.uk/UI/menuimages/menu-grad.gif") repeat-x scroll left -60px transparent;
+}
+#mainmenu2 li.toplevel a.toplevellink .menuarrow, #mainmenu2 li.toplevel a.toplevellink.on:hover .menuarrow,
+#mainmenu2 li.toplevel a.toplevellink.on .menuarrow {
+  display: none;
+}
+#mainmenu2 li.toplevel a.toplevellink:hover .menuarrow {
+  background-image: url("//image.confetti.co.uk/UI/menuimages/menu-arrow.png");
+  bottom: -7px;
+  height: 11px;
+  left: 45%;
+  position: absolute;
+  width: 11px;
+  display: block;
+}
+
+#mainmenu2 li.toplevel a.on:hover {
+  background: #fff;
+}
+#mainmenu2 li.active a.toplevellink {
+  background: url("//image.confetti.co.uk/UI/menuimages/menu-grad.gif") repeat-x scroll left -30px transparent;
+}
+#mainmenu2 li.toplevel a.on {
+  background-color: #FFFFFF;
+  border-bottom: 1px double #FFFFFF;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  height: 40px;
+  margin-left: -1px;
+  padding-left: 11px;
+  position: relative;
+  z-index: 1001;
+}
+#mainmenu2 div.menuchild {
+  display: none;
+  border: 1px solid #ccc;
+  border-top: 4px solid #ccc;
+  background-color: #fff;
+  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1001;
+  float: left;
+  margin-left: -1px;
+  position: absolute;
+}
+#mainmenu2 div.megamenu {
+  top: 40px;
+  left: 10px;
+  right: 10px;
+}
+#mainmenu2 div.menuchild .panel {
+  text-align: center;
+}
+#mainmenu2 .titlecol {
+  border-right: 1px solid #CCCCCC;
+  float: left;
+  width: 150px;
+}
+#mainmenu2 .titlecol ul {
+  margin: 0;
+  padding: 5px 0;
+  list-style-type: none;
+}
+#mainmenu2 .titlecol ul li {
+  line-height: 23px;
+}
+#mainmenu2 .titlecol ul li a {
+  color: #444;
+  padding: 0 10px;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+}
+#mainmenu2 .titlecol ul li.active a {
+  background-color: #fdeff5;
+}
+#mainmenu2 .titlecol ul li a:hover {
+  background-color: #eee;
+}
+#mainmenu2 .simple {
+  min-width: 200px;
+  _width: 200px;
+}
+#mainmenu2 .simple > ul {
+  padding-left: 24px;
+  margin: 0;
+}
+#mainmenu2 .simple li {
+  color: #ccc;
+  list-style-type: square;
+}
+#mainmenu2 .simple a:link, #mainmenu2 .simple a:visited {
+  color: #333;
+  display: block;
+}
+#mainmenu2 .simple a:hover {
+  text-decoration: underline;
+}
+#mainmenu2 .col {
+  float: left;
+  text-align: left;
+}
+#mainmenu2 .wow {
+  background: url(menu-grad-yellow.gif) repeat-x;
+  border-left: 1px solid #CCCCCC;
+  border-right: 1px solid #CCCCCC;
+  right: 1px solid #CCCCCC;
+}
+#mainmenu2 .wow a:hover strong {
+  color: #ec2d91;
+}
+#mainmenu2 .col ul {
+  padding: 5px 0;
+  color: #ccc;
+  margin: 0 0 0 21px;
+}
+#mainmenu2 .col ul li {
+  list-style-type: square;
+}
+#mainmenu2 .col ul li {
+  line-height: 23px;
+}
+#mainmenu2 .col ul li a {
+  padding: 0 10px 0 0;
+  display: block;
+  text-decoration:none;
+  color: #666;
+}
+#mainmenu2 .col ul li a:hover {
+  text-decoration: underline;
+}
+#pageoverlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  background: transparent;
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF)"; /* IE8 */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr=#B2FFFFFF,endColorstr=#B2FFFFFF);   /* IE6 & 7 */
+  zoom: 1;
+
+  background-color: rgba(255,255,255,0.7);
 }
